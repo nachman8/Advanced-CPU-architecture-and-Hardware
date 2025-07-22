@@ -1,0 +1,64 @@
+onerror {resume}
+quietly WaveActivateNextPane {} 0
+add wave -noupdate /datapth_tb/st
+add wave -noupdate /datapth_tb/ld
+add wave -noupdate /datapth_tb/mov
+add wave -noupdate /datapth_tb/done
+add wave -noupdate /datapth_tb/add
+add wave -noupdate /datapth_tb/sub
+add wave -noupdate /datapth_tb/jmp
+add wave -noupdate /datapth_tb/jc
+add wave -noupdate /datapth_tb/jnc
+add wave -noupdate /datapth_tb/xor_s
+add wave -noupdate /datapth_tb/or_s
+add wave -noupdate /datapth_tb/and_s
+add wave -noupdate /datapth_tb/Cflag
+add wave -noupdate /datapth_tb/Zflag
+add wave -noupdate /datapth_tb/Nflag
+add wave -noupdate /datapth_tb/IRin
+add wave -noupdate /datapth_tb/Imm1_in
+add wave -noupdate /datapth_tb/Imm2_in
+add wave -noupdate /datapth_tb/RFin
+add wave -noupdate /datapth_tb/RFout
+add wave -noupdate /datapth_tb/PCin
+add wave -noupdate /datapth_tb/Ain
+add wave -noupdate /datapth_tb/Cin
+add wave -noupdate /datapth_tb/Cout
+add wave -noupdate /datapth_tb/Mem_wr
+add wave -noupdate /datapth_tb/Mem_out
+add wave -noupdate /datapth_tb/Mem_in
+add wave -noupdate /datapth_tb/OPC
+add wave -noupdate /datapth_tb/done_FSM
+add wave -noupdate /datapth_tb/PCsel
+add wave -noupdate /datapth_tb/RFaddr
+add wave -noupdate /datapth_tb/TBactive
+add wave -noupdate /datapth_tb/clk
+add wave -noupdate /datapth_tb/rst
+add wave -noupdate /datapth_tb/TBWriteEnableProgMem
+add wave -noupdate /datapth_tb/TBWriteEnableDataMem
+add wave -noupdate /datapth_tb/TBdataInDataMem
+add wave -noupdate /datapth_tb/TBdataInProgMem
+add wave -noupdate /datapth_tb/TBWriteAddressProgMem
+add wave -noupdate /datapth_tb/TBWriteAddressDataMem
+add wave -noupdate /datapth_tb/TBReadAddressDataMem
+add wave -noupdate /datapth_tb/TBdataOutDataMem
+add wave -noupdate /datapth_tb/donePmemIn
+add wave -noupdate /datapth_tb/doneDmemIn
+TreeUpdate [SetDefaultTree]
+WaveRestoreCursors {{Cursor 1} {458 ps} 0}
+quietly wave cursor active 1
+configure wave -namecolwidth 150
+configure wave -valuecolwidth 100
+configure wave -justifyvalue left
+configure wave -signalnamewidth 0
+configure wave -snapdistance 10
+configure wave -datasetprefix 0
+configure wave -rowmargin 4
+configure wave -childrowmargin 2
+configure wave -gridoffset 0
+configure wave -gridperiod 1
+configure wave -griddelta 40
+configure wave -timeline 0
+configure wave -timelineunits ns
+update
+WaveRestoreZoom {0 ps} {1 ns}
